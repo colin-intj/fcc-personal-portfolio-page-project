@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#welcome-section {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+nav {
+  background-color: #354545;
+  display: flex;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+}
+
+nav a:first-child {
+  margin-left: 50px;
+}
+
+nav a {
+  color: #b1c3c3;
+  padding: max(1vw, 8px);
+  text-decoration: none;
+}
+
+nav a:focus,
+nav a:hover {
+  background-color: #425656;
+  outline: none;
+}
+
+header {
+  align-items: center;
+  color: #abb1be;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 2em;
+  justify-content: center;
+  padding: max(1vw, 8px);
+}
+
+h1 {
+  font-family: 'OCR A', 'Roboto Mono', Consolas, monaco, monospace;
+  hyphens: auto;
+  margin-bottom: 0;
+  word-break: break-word;
+}
+
+h1 + p {
+  font-family: 'Roboto Mono', Consolas, monaco, monospace;
+  margin-top: 0;
+}
+
+main {
+  background-color: #8992a4;
+  color: #252930;
+}
+
+#projects {
+  display: grid;
+  grid-gap: max(2vw, 16px);
+  padding: max(2vw, 16px);
+}
+
+@media only screen and (min-width: 800px) {
+  #projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #projects > h2 {
+    grid-area: 1/1/1/4;
+  }
+}
+
+h2,
+h3 {
+  font-family: 'Roboto Mono', Consolas, monaco, monospace;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+article {
+  background-color: #282c34;
+  box-shadow: 4px 4px 4px #4f5766;
+  color: #abb1be;
+  display: flex;
+  flex-direction: column;
+  padding: max(1vw, 8px);
+}
+
+article h3 {
+  background-color: #abb1be;
+  color: #282c34;
+  padding: max(.5vw, 4px) max(1vw, 8px);
+}
+
+article > div {
+  flex-grow: 1;
+}
+
+.project-link {
+  align-self: flex-end;
+  background-color: #354545;
+  color: #b1c3c3;
+  flex-grow: 0;
+  margin-top: 2em;
+  max-width: 33%;
+  padding: max(1vw, 8px);
+  text-align: center;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  background-color: #425656;
+}
+
+footer {
+  background-color: #3a3545;
+  color: #b6b1c3;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: inherit;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #9992ab;
+}
