@@ -11,11 +11,11 @@ function adjustNotFixedElement(fixedElement, notFixedElement) {
 
 const projectName = 'portfolio';
 
-const NAVBAR = document.getElementById('navbar');
-const HEADER = document.getElementById('header');
+const navbar = document.getElementById('navbar');
+const header = document.getElementById('header');
 
-adjustNotFixedElement(NAVBAR, HEADER);
+adjustNotFixedElement(navbar, header);
 
 window.addEventListener('resize', function() {
-  adjustNotFixedElement(NAVBAR, HEADER);
+  adjustNotFixedElement(navbar, header);
 });
