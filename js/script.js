@@ -5,9 +5,9 @@
  * @param {htmlElement} fixedElement
  * @param {htmlElement} notFixedElement
  */
-function adjustNotFixedElement(fixedElement, notFixedElement) {
+const adjustNotFixedElement = (fixedElement, notFixedElement) => {
   notFixedElement.style.marginTop = fixedElement.offsetHeight + 'px';
-}
+};
 
 const projectName = 'portfolio';
 
@@ -16,6 +16,4 @@ const header = document.getElementById('header');
 
 adjustNotFixedElement(navbar, header);
 
-window.addEventListener('resize', function() {
-  adjustNotFixedElement(navbar, header);
-});
+window.addEventListener('resize', () => adjustNotFixedElement(navbar, header));
