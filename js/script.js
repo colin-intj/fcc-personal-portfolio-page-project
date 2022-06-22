@@ -1,3 +1,5 @@
+'use strict';
+
 /**
  * This function adjusts the top margin of a non-fixed element in a container
  * with a fixed one above it so that the fixed element doesn't possibly overlap
