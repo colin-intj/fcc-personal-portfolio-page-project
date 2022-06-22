@@ -6,16 +6,16 @@
  * @param {htmlElement} notFixedElement
  */
 function adjustNotFixedElement(fixedElement, notFixedElement) {
-  notFixedElement.style.marginTop = fixedElement.offsetHeight + "px";
+  notFixedElement.style.marginTop = fixedElement.offsetHeight + 'px';
 }
 
 const projectName = 'portfolio';
 
-const NAVBAR = document.getElementById("navbar");
-const HEADER = document.getElementById("header");
+const NAVBAR = document.getElementById('navbar');
+const HEADER = document.getElementById('header');
 
 adjustNotFixedElement(NAVBAR, HEADER);
 
-window.addEventListener("resize", function () {
+window.addEventListener('resize', function() {
   adjustNotFixedElement(NAVBAR, HEADER);
 });
