@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   margin: 0;
 }
 
@@ -52,14 +52,14 @@ header {
 }
 
 h1 {
-  font-family: 'OCR A', 'Roboto Mono', Consolas, monaco, monospace;
+  font-family: "OCR A", "Roboto Mono", Consolas, monaco, monospace;
   hyphens: auto;
   margin-bottom: 0;
   word-break: break-word;
 }
 
 h1 + p {
-  font-family: 'Roboto Mono', Consolas, monaco, monospace;
+  font-family: "Roboto Mono", Consolas, monaco, monospace;
   margin-top: 0;
 }
 
@@ -86,7 +86,7 @@ main {
 
 h2,
 h3 {
-  font-family: 'Roboto Mono', Consolas, monaco, monospace;
+  font-family: "Roboto Mono", Consolas, monaco, monospace;
 }
 
 h2 {
@@ -106,7 +106,7 @@ article {
 article h3 {
   background-color: #abb1be;
   color: #282c34;
-  padding: max(.5vw, 4px) max(1vw, 8px);
+  padding: max(0.5vw, 4px) max(1vw, 8px);
 }
 
 article > div {
